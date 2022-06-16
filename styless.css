@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&family=Poppins:wght@500&family=Rubik&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans serif;
+}
+
+main{
+    background-image: url("../CSS\ Respon\ &\ Media\ Queries/bg-intro-desktop.png");
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+}
+
+main::after{
+    content: '';
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    width: 100%;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    gap: 30px;
+    padding: 0 100px;
+}
+.text{
+    margin-left: 100px;
+}
+.text h2{
+    color: white;
+    font-size: 2em;
+}
+
+.text p{
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+.first-link{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 13px;
+    width: 80%;
+    text-align: center;
+}
+
+.input-form{
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    width: 80%;
+    margin-right: 280px;
+}
+
+.input-form input{
+    display: block;
+    padding: 10px 0;
+    color: black;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 10px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+.input-form a{
+    text-decoration: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.input-form p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.input-form span{
+    color: red;
+}
+
+
+
+@media (max-width: 700px){
+    main{
+        background-image: url("../CSS\ Respon\ &\ Media\ Queries/bg-intro-desktop.png");
+        position: relative;
+        /* background-repeat: cover; */
+        z-index: 1;
+        height: 180vh;
+        width: 90%;
+    }
+    
+    main::after{
+        content: '';
+        background-color: hsl(0, 100%, 74%);
+        height: 180vh;
+        width: 110%;
+        opacity: .7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; */
+        /* width: 100%; */
+        text-align: center;
+        align-items: center;
+    
+    }
+    
+    .text{
+        margin-left: 20px;
+    }
+    
+    .text h2{
+        text-align: center;
+        margin-top: 20px;
+        /* border: 1px solid white; */
+        padding: 10px 30px;
+    }
+    
+    .second-part{
+        text-align: center;
+        align-items: center;
+        position: relative;
+        left: 30%;
+    }
+    
+    .first-link{
+        position: relative;
+        right: 10%;
+    }
+}
+
