@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&family=Poppins:wght@500&family=Rubik&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.grid{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    justify-content: center;
+    /* display: block;
+    place-content: center; */
+    position: relative;
+    left: 500px;
+}
+
+main{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px;
+    width: auto;
+    height: 84%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sedans h3{
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+.sedans p{
+    color: white;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    margin-right: 1em;
+    font-size: 15px;
+}
+
+.sedans a{
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 20px;
+    color: hsl(31, 77%, 52%);;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;
+    /* width: auto; */
+    height: 84%;
+}
+
+.suvs h3{
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+.suvs p{
+    color: white;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    margin-right: 1em;
+    font-size: 15px;
+}
+
+.suvs a{
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 20px;
+    color: hsl(184, 100%, 22%);
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 11px;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+    /* width: auto; */
+    height: 84%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.luxury h3{
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+.luxury p{
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 3.8em;
+    margin-right: 1em;
+    font-size: 15px;
+}
+
+.luxury a{
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 20px;
+    color: hsl(179, 100%, 13%);
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+@media (max-width: 500px){
+
+    .grid{
+        text-decoration: none;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+        justify-content: center;
+        /* display: block;
+        place-content: center; */
+        position: relative;
+        left: 140px;
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sedans{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .sedans p{
+        margin-top: -10px;
+    }
+
+    .suvs a{
+        margin-top: -10px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
